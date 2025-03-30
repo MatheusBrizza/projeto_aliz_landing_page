@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja - Aliz Costura Criativa</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aliz Costura Criativa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./gallery.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Loja</a>
+                </li>
+            </ul>
+            <div class="ms-2">
+                <button class="btn btn-outline-dark position-relative" id="cart-btn">
+                    <i class="bi bi-cart"></i> Carrinho
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary cart-count">0</span>
+                </button>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <div class="bg-light py-5">
+        <div class="container">
+            <h1 class="text-center">Our Products</h1>
+            <p class="text-center lead">Each item is crafted with care and attention to detail</p>
+        </div>
+    </div>
+
+    <!-- Shop Categories -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active" data-category="all">All
+                        Products</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-category="towels">Towels</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-category="ceramics">Ceramics</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-category="textiles">Other
+                        Textiles</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-category="accessories">Home
+                        Accessories</a>
+                </div>
+            </div>
+
+            <!-- Products -->
+            <div class="col-md-9">
+                <div class="row" id="products-container">
+                    <!-- Towels -->
+                    <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="towels">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="../images/img14.jpg" alt="Luxury Hand Towel">
+                            <div class="card-body">
+                                <h5 class="card-title">Luxury Hand Towel</h5>
+                                <p class="card-text">100% organic cotton, hand-finished edges</p>
+                                <p class="card-price">$24.99</p>
+                                <button class="btn btn-primary buy-btn" data-id="1" data-name="Luxury Hand Towel"
+                                    data-price="24.99">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="towels">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="../images/img15.jpg" alt="Bath Towel Set">
+                            <div class="card-body">
+                                <h5 class="card-title">Bath Towel Set</h5>
+                                <p class="card-text">Set of 3 premium bath towels in earthy tones</p>
+                                <p class="card-price">$79.99</p>
+                                <button class="btn btn-primary buy-btn" data-id="2" data-name="Bath Towel Set"
+                                    data-price="79.99">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="towels">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="../images/img16.jpg" alt="Beach Towel">
+                            <div class="card-body">
+                                <h5 class="card-title">Artisan Beach Towel</h5>
+                                <p class="card-text">Extra large beach towel with hand-woven pattern</p>
+                                <p class="card-price">$39.99</p>
+                                <button class="btn btn-primary buy-btn" data-id="3" data-name="Artisan Beach Towel"
+                                    data-price="39.99">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ceramics -->
+                    <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="ceramics">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="../images/img17.jpg" alt="Handmade Ceramic Vase">
+                            <div class="card-body">
+                                <h5 class="card-title">Handmade Ceramic Vase</h5>
+                                <p class="card-text">Each piece unique with natural glazing</p>
+                                <p class="card-price">$59.99</p>
+                                <button class="btn btn-primary buy-btn" data-id="4" data-name="Handmade Ceramic Vase"
+                                    data-price="59.99">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="ceramics">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="../images/img1.jpg" alt="Set of 4 Ceramic Mugs">
+                            <div class="card-body">
+                                <h5 class="card-title">Set of 4 Ceramic Mugs</h5>
+                                <p class="card-text">Hand-thrown and glazed mugs in complementary colors</p>
+                                <p class="card-price">$89.99</p>
+                                <button class="btn btn-primary buy-btn" data-id="5" data-name="Set of 4 Ceramic Mugs"
+                                    data-price="89.99">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Textiles -->
+                    <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="textiles">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="../images/img2.jpg" alt="Linen Table Runner">
+                            <div class="card-body">
+                                <h5 class="card-title">Linen Table Runner</h5>
+                                <p class="card-text">Hand-hemmed pure linen with natural dyes</p>
+                                <p class="card-price">$45.99</p>
+                                <button class="btn btn-primary buy-btn" data-id="6" data-name="Linen Table Runner"
+                                    data-price="45.99">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Home Accessories -->
+                    <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="accessories">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="../images/img3.jpg" alt="Handwoven Basket">
+                            <div class="card-body">
+                                <h5 class="card-title">Handwoven Basket</h5>
+                                <p class="card-text">Natural materials combined with traditional weaving techniques</p>
+                                <p class="card-price">$49.99</p>
+                                <button class="btn btn-primary buy-btn" data-id="7" data-name="Handwoven Basket"
+                                    data-price="49.99">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="accessories">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="../images/img4.jpg" alt="Wooden Serving Tray">
+                            <div class="card-body">
+                                <h5 class="card-title">Wooden Serving Tray</h5>
+                                <p class="card-text">Hand-carved from sustainable wood with natural finish</p>
+                                <p class="card-price">$69.99</p>
+                                <button class="btn btn-primary buy-btn" data-id="8" data-name="Wooden Serving Tray"
+                                    data-price="69.99">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Your Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <!-- Cart items will be inserted here via JavaScript -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-end"><strong>Total:</strong></td>
+                                <td id="cart-total">$0.00</td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                    <button type="button" class="btn btn-primary" id="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Aliz Costura Criativa</h5>
+                    <p>Handcrafted with love since 1998</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-white">Home</a></li>
+                        <li><a href="./about.html" class="text-white">Sobre nós</a></li>
+                        <li><a href="./shop.html" class="text-white">Loja</a></li>
+                        <li><a href="./gallery.html" class="text-white">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        123 Crafters Lane<br>
+                        Artisan City, AC 12345<br>
+                        Email: info@ateliervista.com<br>
+                        Phone: (123) 456-7890
+                    </address>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2023 Aliz Costura Criativa. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+
+    <!-- Bootstrap JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom JS -->
+    <script src="../js/index.js"></script>
+    <script src="../js/shop.js"></script>
+</body>
+
+</html>

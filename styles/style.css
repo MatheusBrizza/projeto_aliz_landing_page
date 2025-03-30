@@ -1,0 +1,170 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Hero Swiper */
+.heroSwiper {
+  height: 80vh;
+  width: 100%;
+}
+
+.hero-slide {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* About Page Styles */
+.about-hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 100px 0;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-hero h1 {
+  position: relative;
+  z-index: 2;
+}
+
+/* Shop Page Styles */
+.card-price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #3a5a40;
+}
+
+/* Product Images Height Limit */
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* Gallery Page Styles */
+.gallery-container {
+  transition: all 0.3s ease;
+}
+
+.gallery-item {
+  transition: all 0.3s ease;
+}
+
+.gallery-item .card {
+  cursor: pointer;
+}
+
+.gallery-item img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.filter-btn.active {
+  background-color: #3a5a40;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heroSwiper {
+    height: 60vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .gallery-item img {
+    height: 180px;
+  }
+}
+
+/* Product category filter */
+.list-group-item.active {
+  background-color: #3a5a40;
+  border-color: #3a5a40;
+}
+
+/* Card hover effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom button styles */
+.btn-primary {
+  background-color: #3a5a40;
+  border-color: #3a5a40;
+}
+
+.btn-primary:hover {
+  background-color: #344e41;
+  border-color: #344e41;
+}
+
+.btn-outline-primary {
+  color: #3a5a40;
+  border-color: #3a5a40;
+}
+
+.btn-outline-primary:hover {
+  background-color: #3a5a40;
+  border-color: #3a5a40;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heroSwiper {
+    height: 60vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+    
+  .card-img-top {
+    height: 200px;
+  }
+}
